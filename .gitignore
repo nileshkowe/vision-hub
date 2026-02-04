@@ -1,4 +1,9 @@
-# Python
+# User-specified exclusions
+.agent/
+todo.txt
+fix-current-codebase.md
+```markdown.md
+
 __pycache__/
 *.py[cod]
 *$py.class
