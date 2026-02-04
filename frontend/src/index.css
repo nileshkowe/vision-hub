@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-white font-sans antialiased;
+    background-image:
+      radial-gradient(circle at 50% 0%, rgba(0, 255, 157, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 0% 100%, rgba(0, 255, 157, 0.03) 0%, transparent 30%);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-gray-800/40 backdrop-blur-md border border-white/5 shadow-glass;
+  }
+
+  .neon-border {
+    @apply border border-brand-green/50 shadow-neon;
+  }
+
+  .icon-diamond {
+    @apply rotate-45 rounded-lg transition-all duration-300;
+  }
+
+  .icon-diamond-inner {
+    @apply -rotate-45;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+asyncpg
+pydantic
+python-multipart
+requests
+# Loads `.env` at startup (`backend/main.py` imports `dotenv.load_dotenv`)
+python-dotenv
+# WebSocket implementation for Uvicorn (required for WS handshake)
+websockets
+# For inference / frame processing.
+# IMPORTANT: pin to a NumPy<2 compatible build because the project environment uses NumPy 1.26.x
+# (facenet-pytorch / scipy / scikit-learn in this repo are not compatible with NumPy 2.x).
+opencv-python-headless==4.11.0.86
