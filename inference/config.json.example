@@ -1,8 +1,8 @@
 {
     "parameters": {
-        "yolo_model_path": "F:/nileshWork-env/Website/Cursor/cctv/intact_face_rec/face_detect.pt",
-        "facenet_model_path": "F:/nileshWork-env/Website/Cursor/cctv/intact_face_rec/Final_model_08-12-2025_18-29-13.pth",
-        "db_json_path": "F:/nileshWork-env/Website/Cursor/cctv/intact_face_rec/db_embedding_Final.json",
+        "yolo_model_path": "path/to/yolov8n.pt",
+        "facenet_model_path": "path/to/facenet_model.pth",
+        "db_json_path": "path/to/database.json",
         "save_matched_dir": "matched_faces",
         "save_unknown_dir": "unknown_faces",
         "attendance_dir": "attendance_logs",
