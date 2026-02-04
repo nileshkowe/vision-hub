@@ -145,6 +145,6 @@ thumbnail_cache/
 *.json
 !package.json
 !tsconfig.json
-!inference/config.json
+# !inference/config.json (Removed to ensure sensitive config is ignored)
 # Ensure specific config files are ignored if they contain secrets, 
 # but we checked inference/config.json and strict secrets are in env.
