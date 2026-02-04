@@ -15,8 +15,8 @@
     ```
     Set your camera RTSP URL (C1) before running:
     ```bash
-    set C1_RTSP_URL=rtsp://user:password@192.168.1.2:554/Streaming/Channels/101   # Windows
-    export C1_RTSP_URL=rtsp://user:password@192.168.1.2:554/Streaming/Channels/101 # Mac/Linux
+    set C1_RTSP_URL=rtsp://username:password@192.168.x.x:554/Streaming/Channels/101   # Windows
+    export C1_RTSP_URL=rtsp://username:password@192.168.x.x:554/Streaming/Channels/101 # Mac/Linux
     ```
     Optional: override CORS origins (comma-separated) with `CORS_ORIGINS`.
 

@@ -46,7 +46,11 @@ def main():
         
     # 2. Setup Camera (Env Override > Config)
     # We want to run for C1 specifically for the demo
-    rtsp_url = os.getenv("C1_RTSP_URL", "rtsp://admin:cctv@9696@192.168.1.2:554/Streaming/Channels/101")
+    # Default to a placeholder if not set, or handle empty string
+    rtsp_url = os.getenv("C1_RTSP_URL", "")
+    if not rtsp_url:
+        print("ERROR: C1_RTSP_URL environment variable not set")
+        return
     cameras = {"C1": rtsp_url}
     
     print(f"Starting Inference Worker for: {cameras}")

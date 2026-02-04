@@ -124,7 +124,7 @@ def get_processor():
                     config = json.load(f)
 
                 # Hardcode C1 for demo as requested
-                rtsp_url = os.getenv("C1_RTSP_URL", "rtsp://admin:cctv@9696@192.168.1.2:554/Streaming/Channels/101")
+                rtsp_url = os.getenv("C1_RTSP_URL", "")
                 cameras = {"C1": rtsp_url}
                 
                 logger.info(f"Initializing Inference Processor for MJPEG streaming: {cameras}")

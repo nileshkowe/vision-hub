@@ -3,6 +3,10 @@
 todo.txt
 fix-current-codebase.md
 ```markdown.md
+data/unknown/
+streams/
+inference/config.json
+inference/data/
 
 __pycache__/
 *.py[cod]
